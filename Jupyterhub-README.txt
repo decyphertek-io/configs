@@ -19,7 +19,6 @@ Email: adminotaur@decyphertek.io
   $ sudo su -c "curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -"
   $ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
   $ sudo apt-get install -y nodejs 
-  $ sudo npm install npm@latest -g
   $ sudo npm install -g configurable-http-proxy
   $ sudo apt install -y python3-pip  
   $ sudo -H python3 -m pip install importlib-metadata zipp -U
