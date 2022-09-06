@@ -2,9 +2,12 @@ Welcome to decyphertek. Jupyterhub can be accessed from:
 
 # Accept cert warning, can replace with your own certs if you wish. 
 https://ip-of-server
-User: jupyterhub
-Pass: Decyphertek!
-# Please update the jupyterhub password or make a new user and remove jupyterhub. 
+# Uses PAM
+User: you need to make a user
+Pass: you need to set the password
+# Example
+$ sudo useradd -m username
+$ sudo passwd username
 # A linux system user with a password is required to login to Jupyterhub. 
 # Please read through the Instructions below for more details
 
