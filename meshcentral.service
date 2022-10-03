@@ -1,11 +1,11 @@
 [Unit] 
-Description=MeshCentral Server  
+Description=MeshCentral 
 After=syslog.target network.target
 
 [Service] 
 Type=simple 
 LimitNOFILE=1000000 
-ExecStart=/usr/bin/node /opt/meshcentral/node_modules/meshcentral 
+ExecStart=/usr/bin/node -f /opt/meshcentral/node_modules/meshcentral 
 WorkingDirectory=/opt/meshcentral 
 Environment=NODE_ENV=production 
 User=adminotaur 
@@ -15,5 +15,5 @@ Restart=always
 RestartSec=10 
 # Set port permissions capability AmbientCapabilities=cap_net_bind_service 
 
-[Install] 
+[Install]
 WantedBy=multi-user.target
