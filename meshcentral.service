@@ -5,8 +5,8 @@ After=syslog.target network.target
 [Service] 
 Type=simple 
 LimitNOFILE=1000000 
-ExecStart=/usr/bin/node -f /opt/meshcentral/node_modules/meshcentral 
-WorkingDirectory=/opt/meshcentral 
+ExecStart=/usr/bin/node /home/adminotaur/meshcentral/node_modules/meshcentral 
+WorkingDirectory=/home/adminotaur/meshcentral 
 Environment=NODE_ENV=production 
 User=adminotaur 
 Group=adminotaur 
