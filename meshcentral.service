@@ -1,5 +1,5 @@
 [Unit] 
-Description=MeshCentral 
+Description=meshcentral 
 After=syslog.target network.target
 
 [Service] 
