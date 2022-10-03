@@ -6,7 +6,9 @@ After=syslog.target network.target
 Type=simple 
 LimitNOFILE=1000000 
 ExecStart=/usr/bin/node /opt/meshcentral/node_modules/meshcentral 
-WorkingDirectory=/opt/meshcentral Environment=NODE_ENV=production User=adminotaur 
+WorkingDirectory=/opt/meshcentral 
+Environment=NODE_ENV=production 
+User=adminotaur 
 Group=adminotaur 
 Restart=always 
 # Restart service after 10 seconds if node service crashes 
