@@ -41,7 +41,7 @@
          * node-red from being able to decrypt your existing credentials and they will be
          * lost.
          */
-        //credentialSecret: "a-secret-key",
+        credentialSecret: "a-secret-key",
     
         /** By default, the flow JSON will be formatted over multiple lines making
          * it easier to compare changes when using version control.
@@ -78,7 +78,7 @@
             users: [
                 {
                     username: "adminotaur",
-                    password: "decyphertek",
+                    password: "$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN.",
                     permissions: "*"
                 }
             ]
@@ -93,8 +93,8 @@
     
         /** Option 1: static object */
         https: {
-        key: require("fs").readFileSync('~/.node-red/keys/private-ssl.key'),
-        cert: require("fs").readFileSync('~/.node-red/keys/private-ssl.crt')
+        key: require("fs").readFileSync('/home/adminotaur/.node-red/keys/private-ssl.key'),
+        cert: require("fs").readFileSync('/home/adminotaur/.node-red/keys/private-ssl.crt')
         },
     
         /** Option 2: function that returns the HTTP configuration object */
@@ -124,8 +124,8 @@
          * The `pass` field is a bcrypt hash of the password.
          * See http://nodered.org/docs/security.html#generating-the-password-hash
          */
-        //httpNodeAuth: {user:"user",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
-        //httpStaticAuth: {user:"user",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
+        httpNodeAuth: {user:"adminotaur",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
+        httpStaticAuth: {user:"adminotaur",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
     
     /*******************************************************************************
      * Server Settings
