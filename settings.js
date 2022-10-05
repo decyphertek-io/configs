@@ -78,7 +78,7 @@
             users: [
                 {
                     username: "adminotaur",
-                    password: "$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN.",
+                    password: "$2a$08$AqtiIsAdU11yCAlwJJZq9u0//3j5SUmQra.S8uY0.dfFxM3rw0BzG",
                     permissions: "*"
                 }
             ]
@@ -124,8 +124,8 @@
          * The `pass` field is a bcrypt hash of the password.
          * See http://nodered.org/docs/security.html#generating-the-password-hash
          */
-        httpNodeAuth: {user:"adminotaur",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
-        httpStaticAuth: {user:"adminotaur",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
+        httpNodeAuth: {user:"adminotaur",pass:"$2a$08$AqtiIsAdU11yCAlwJJZq9u0//3j5SUmQra.S8uY0.dfFxM3rw0BzG"},
+        httpStaticAuth: {user:"adminotaur",pass:"$2a$08$AqtiIsAdU11yCAlwJJZq9u0//3j5SUmQra.S8uY0.dfFxM3rw0BzG"},
     
     /*******************************************************************************
      * Server Settings
