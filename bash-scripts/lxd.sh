@@ -1,4 +1,5 @@
-sudo snap install lxd
+
+
 lxd init --minimal
 lxc launch images:ubuntu/22.04 lxd-dashboard
 # If you are using UFW , make sure LXD can pass through the firewall. 
