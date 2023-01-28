@@ -18,8 +18,6 @@ mkdir -p /var/lxdware/backups
 chown -R www-data:www-data /var/lxdware/
 chown -R www-data:www-data /var/www/html
 systemctl restart nginx
-$ chmod +x lxd.sh
-$ ./lxd.sh
 $ exit
 
 lxc profile create proxy-port-80
