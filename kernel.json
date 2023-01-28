@@ -1,8 +1,0 @@
-{"argv": ["/usr/bin/R", "--quiet", "-e", "IRkernel::main()", "--args", 
-"{connection_file}"],
-
- "display_name":"R Kernel",
-
- "language":"R"
-
-}
