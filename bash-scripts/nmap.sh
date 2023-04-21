@@ -23,13 +23,13 @@ sudo nmap --script vuln $IP -oX vuln-info.xml
 xmlstarlet sel -t -c "//node()"  smb-discovery.xml snmp-info.xml > nmap-merge-01.xml
 
 # merge 2 xml
-xmlstarlet -t -c "//node()"  firewall-bypass.xml vuln-info.xml > nmap-merge-02.xml
+xmlstarlet sel -t -c "//node()"  firewall-bypass.xml vuln-info.xml > nmap-merge-02.xml
 
 # Merge the merge
-xmlstarlet -t -c "//node()" nmap-merge-01.xml nmap-merge-02.xml > nmap-merged.xml
+xmlstarlet sel -t -c "//node()" nmap-merge-01.xml nmap-merge-02.xml > nmap-merged.xml
 
 # Final merge
-xmlstarlet -t -c "//node()"  nmap-merged.xml general-scan.xml > nmap-merged-results.xml
+xmlstarlet sel -t -c "//node()"  nmap-merged.xml general-scan.xml > nmap-merged-results.xml
 
 # Convert to html 
 xsltproc nmap-merged-results.xml -o nmap-merged-results.html
