@@ -1,0 +1,10 @@
+[Unit]
+Description=Startup
+
+[Service] 
+User=core
+Type=oneshot
+ExecStart=/home/core/.docker/startup.sh
+
+[Install]  
+WantedBy=multi-user.target
