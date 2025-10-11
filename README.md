@@ -1,2 +1,1 @@
-# configs
-Company Logo.
+# configs: Not here here?
